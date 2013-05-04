@@ -19,6 +19,10 @@ git clone https://github.com/runexec/casing.git
 cd casing
 lein install
 ```
+Add to Clojure project
+```clojure
+[casing/casing "0.1.0-SNAPSHOT"]
+```
 
 Test if it's installed from terminal
 ```bash
