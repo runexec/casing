@@ -6,10 +6,10 @@ Clojure CamelCase to lisp-case converter
 
 #### Example Usage ####
 ```clojure
-user> (use 'casing.core)
-nil
-user> (casing "SomeLongJavaMethod")
-"some-long-java-method"
+casing.core> (casing "CamelCase")
+"camel-case"
+casing.core> (casing "GoodHTTPRequestAPPLE")
+"good-http-request-apple"
 ```
 
 #### Installation ####
