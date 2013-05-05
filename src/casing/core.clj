@@ -22,7 +22,9 @@
                          up (re-seq #"[A-Z]+"
                                     remove-camel)]
                     (if-not (seq up)
-                      (last _)
+                      (if (->> s first str (re-seq #"[a-z]"))
+                        (str (first s) (last _))
+                        (last _))
                       (let [this (first up)
                             that (string/lower-case 
                                   (str "-" (first up) "-"))]
